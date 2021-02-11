@@ -1,13 +1,357 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/* General */
+
+
+#body{
+  color:#333333;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin-bottom: 100px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+p{
+  width: 80%;
+  margin:auto;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+/* all titles */
+#root h1{
+  font-weight: bold;
+  font-family: roboto;
+  font-size: 60px;
+}
+#root h2{
+  font-size: 30px;
+  color: #FAC413;
+  font-family: roboto;
+}
+
+#root h3{
+  font-size: 40px;
+  font-weight: bold;
+  text-align: left;
+}
+
+#root h4{
+  font-size: 22px;
+}
+
+/* all links */
+#root a{
+  color: #333333;
+}
+
+#root a:hover{
+  color: #333333;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/* all sections */
+section{
+  width: 90%;
+  text-align: center;
+  margin:auto;
+}
+
+/* all images */
+img{
+  width: 100%;
+}
+
+/* all cards */
+.card{
+  width: 300px;
+  margin: auto;
+}
+
+
+.profile{
+  width: 100px;
+}
+
+/* buttons */
+#root .button {
+  background-color:white;
+  border-color: #FBC500;
+  outline-color: #FBC500;
+  color: black;
+  border-width: 2px;
+  border-radius: 10px;
+  width: 150px;
+}
+/* buttons when hovered */
+#root .button:hover{
+  background:#FBC500;
+  color: black;
+  font-weight: 600;
+  outline-color: #FBC500;
+  border-color:#FBC500;
+  border-radius: 10px;
+
+}
+
+/* Home */
+.home #text{
+  width: 100%;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 2.2rem;
+}
+.home img{
+  width: 300px;
+}
+.home p{
+  width: 70%;
+  text-align: center;
+  font-weight: 600;
+}
+
+/* About Me Component */
+.aboutme .svg{
+  width: 50px;
+}
+#qr{
+  width: 180px;
+  display: block;
+}
+
+/* Title Component */
+.title .yellow{
+  background-color:#FBC500;
+  color:#333333;
+}
+.title .active{
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+.title hr{
+  width: 100px;
+  border:rgba(255, 255, 255,0.5) 4px solid;
+  margin-top: 2px;
+}
+
+/* Covers */
+
+ .cover p{
+  width: 90%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 4; /* number of lines to show */
+  -webkit-box-orient: vertical;
+}
+
+ .cover .proyect{
+  width: 90%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2; /* number of lines to show */
+  -webkit-box-orient: vertical;
+}
+
+.cover .skillText{
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2; /* number of lines to show */
+  -webkit-box-orient: vertical;
+  text-align: left;
+}
+
+#show-project p{
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 6; /* number of lines to show */
+  -webkit-box-orient: vertical;
+  text-align: left;
+}
+
+#modeling p{
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3; /* number of lines to show */
+  -webkit-box-orient: vertical;
+  text-align: left;
+}
+
+/* video */
+iframe{
+  width: 100%;
+  height: 500px;
+}
+
+/* Show */
+.show p{
+  width: 90%;
+}
+#root .active{
+  font-weight: bold;
+  background-color: #FAC413;
+}
+
+/* Skills */
+.titleSkills{
+  font-weight: bold;
+  text-align: center;
+}
+
+
+/* Footer */
+#footer-text{
+  width: 100%;
+}
+.footer .svg{
+  width: 30px;
+}
+ #footer{
+  position:fixed;
+  bottom:0;
+  width:100%;
+  height:80px; 
+  background-color:white;
+  z-index: 0;
+} 
+#footer .section{
+  width: 80%;
+  margin: auto;
+}
+
+#header{
+  z-index: 3;
+}
+
+/* Contact */
+.form{
+  text-align: left;
+}
+form #row div{
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+/* Software */
+.software{
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #FAC413;
+}
+#software p{
+  width: 80%;
+}
+#root .svg{
+  height: 40px;
+}
+
+model-viewer{
+  width: 80%;
+  height: 200px;
+  margin:auto;
+  background: #f1f1f1;
+}
+
+.show-models model-viewer{
+  height: 90%;
+  width: 100%;
+  background: white;
+}
+
+.h-400{
+  height: 300px;
+  width: 100%;
+}
+
+
+/* mobile size */
+@media (max-width: 576px){
+  .mobile{
+      flex-direction: column;
+      align-items: center;
+  }
+  #root h1{
+      font-size: 30px;
+  }
+  #root h2{
+      font-size: 20px;
+  }
+  #root h3{
+    font-size: 20px;
+  }
+  p{
+    font-size: 18px;
+  }
+  section{
+    width: 80%;
+  } 
+  .card {
+    width: 100%
+  }
+  .footer{
+    text-align: center;
+  }
+/* 3d models */
+  model-viewer{
+    width: 100%;
+    height: 200px;
+    margin:auto;
+    background: #f1f1f1;
+  }
+  /* videos */
+  iframe{
+    width: 100%;
+    height: 200px;
+  }
+
+  /* footer on mobile devices */
+  #footer{
+    position:fixed;
+    bottom:0;
+    width:100%;
+    height:180px; 
+    background-color:white;
+  } 
+  /* margin for footer */
+  #body{
+    margin-bottom: 200px;
+  }
+  /* text */
+  .home #text{
+    width: 90%;
+    margin: auto;
+    font-size: 18px;
+    font-weight: 400;
+  }
+  #profile{
+    width: 150px;
+  }
+  
+}
+
+/* ipad size */
+@media (max-width: 1000px){
+  p{
+    width: 80%;
+  }
+  #body{
+    margin-bottom: 200px;
+  }
+  }
+
+@media (min-width: 992px){
+  .left{
+    text-align: left;
+  }
+  .right{
+    text-align: right;
+  }
+
 }
